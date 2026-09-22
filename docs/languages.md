@@ -6,15 +6,15 @@
 
 采用完整 OpenTelemetry Java Instrumentation 源码的下游维护方式，保留上游历史，并在对应模块开发自有增强。当前处于工程准备阶段，尚无 Beacon Java 正式发行。
 
-以下是计划发布到 GitHub 的目标地址，使用 `beacon` 开发分支。对应仓库、分支和文件推送并开放访问后才可使用；目前不作为已上线入口或下载地址。
+以下开发入口已推送到 GitHub，使用 `main` 开发分支。开发文档会随分支更新，不作为正式版本的安装或支持承诺。
 
-| 入口 | 目标地址 |
+| 入口 | 开发地址 |
 | --- | --- |
 | 源码仓库 | [GuanceCloud/beacon-java](https://github.com/GuanceCloud/beacon-java) |
-| 开发说明 | [Beacon Java 开发入口](https://github.com/GuanceCloud/beacon-java/blob/beacon/beacon/README.md) |
-| 源码来源 | [上游基线记录](https://github.com/GuanceCloud/beacon-java/blob/beacon/beacon/upstream.lock.json) |
-| 上游维护 | [OTel 同步流程](https://github.com/GuanceCloud/beacon-java/blob/beacon/beacon/UPSTREAM.md) |
-| 发行开发 | [发行流程与准备项](https://github.com/GuanceCloud/beacon-java/blob/beacon/beacon/RELEASING.md) |
+| 开发说明 | [Beacon Java 开发入口](https://github.com/GuanceCloud/beacon-java/blob/main/beacon/README.md) |
+| 源码来源 | [上游基线记录](https://github.com/GuanceCloud/beacon-java/blob/main/beacon/upstream.lock.json) |
+| 上游维护 | [OTel 同步流程](https://github.com/GuanceCloud/beacon-java/blob/main/beacon/UPSTREAM.md) |
+| 发行开发 | [发行流程与准备项](https://github.com/GuanceCloud/beacon-java/blob/main/beacon/RELEASING.md) |
 
 上述链接指向开发文档，会随开发分支变化，不代表某个正式版本的安装指南或支持承诺。首次发行后，本页再补充实际发布标签对应的使用文档与 Release 链接。
 
@@ -24,7 +24,19 @@
 
 ## Python
 
-计划在 `GuanceCloud/beacon-python` 维护。工程尚待建立，先盘点现有实现并确定维护方式；暂不提供仓库或安装链接。
+采用完整 OpenTelemetry Python Contrib 源码的独立下游维护方式，不使用 GitHub Fork。开发工程已从旧 `gtrace` 分支保留自有增强与提交历史，并合入官方 `v0.65b0` 发布基线；配套 Python Core 开发依赖固定到 `v1.44.0`。目前仅完成自有发行包与 Profiling 测试，尚未完成完整上游矩阵、DataKit 接收端和正式制品验收，因此没有 Beacon Python 正式发行或安装入口。
+
+以下开发入口已推送到 GitHub，使用 `main` 开发分支。开发文档会随分支更新，不作为正式版本的安装或支持承诺。
+
+| 入口 | 开发地址 |
+| --- | --- |
+| 源码仓库 | [GuanceCloud/beacon-python](https://github.com/GuanceCloud/beacon-python) |
+| 开发说明 | [Beacon Python 开发入口](https://github.com/GuanceCloud/beacon-python/blob/main/beacon/README.md) |
+| 源码来源 | [上游基线记录](https://github.com/GuanceCloud/beacon-python/blob/main/beacon/upstream.lock.json) |
+| 上游维护 | [OTel 同步流程](https://github.com/GuanceCloud/beacon-python/blob/main/beacon/UPSTREAM.md) |
+| 发行准备 | [发行准备项](https://github.com/GuanceCloud/beacon-python/blob/main/beacon/RELEASING.md) |
+
+现有自有实现的历史来源可在[旧 `gtrace` 分支](https://github.com/GuanceCloud/opentelemetry-python-contrib/tree/gtrace)追溯；已有的 Guance PyPI 包不等于 Beacon Python 发行。首次发行后，本页再补充固定版本的安装与 Release 链接。
 
 ## 支持范围的维护方式
 
