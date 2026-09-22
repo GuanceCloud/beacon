@@ -24,7 +24,7 @@
 
 ## Python
 
-采用完整 OpenTelemetry Python Contrib 源码的独立下游维护方式，不使用 GitHub Fork。开发工程已从旧 `gtrace` 分支保留自有增强与提交历史，并合入官方 `v0.65b0` 发布基线；配套 Python Core 开发依赖固定到 `v1.44.0`。目前仅完成自有发行包与 Profiling 测试，尚未完成完整上游矩阵、DataKit 接收端和正式制品验收，因此没有 Beacon Python 正式发行或安装入口。
+采用完整 OpenTelemetry Python Contrib 源码的独立下游维护方式，不使用 GitHub Fork。开发工程已从旧 `gtrace` 分支保留自有增强与提交历史，并合入官方 `v0.65b0` 发布基线；配套 Python Core 开发依赖固定到 `v1.44.0`。旧 `gtrace` 发行包已从开发工程移除，目前仅完成 Profiling 扩展测试，尚未完成完整上游矩阵、DataKit 接收端和正式制品验收，因此没有 Beacon Python 正式发行或安装入口。
 
 以下开发入口已推送到 GitHub，使用 `main` 开发分支。开发文档会随分支更新，不作为正式版本的安装或支持承诺。
 
