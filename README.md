@@ -10,6 +10,7 @@ Beacon 是 GuanceCloud 基于 OpenTelemetry 维护的多语言应用探针。各
 
 - [语言项目](docs/languages.md)：各语言仓库、开发文档和发行状态。
 - [维护原则](docs/maintenance.md)：仓库分工、上游同步和发布要求。
+- [新语言接入与首次发行经验](docs/language-onboarding.md)：供 PHP 等后续语言复用的判断顺序与验收边界。
 - [路线图](docs/roadmap.md)：后续建设方向，不作为已支持能力或交付期限承诺。
 
 ## 如何使用本仓库
